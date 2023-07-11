@@ -19,6 +19,10 @@ const HomeScreen = ({navigation}) => {
   <Text>This is a list of images</Text>
   </TouchableOpacity>
 
+  <TouchableOpacity onPress={() => navigation.navigate('Counter')}>
+  <Text>Counter Demo</Text>
+  </TouchableOpacity>
+
   </View>
 )};
 
