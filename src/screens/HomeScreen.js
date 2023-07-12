@@ -23,6 +23,10 @@ const HomeScreen = ({navigation}) => {
   <Text>Counter Demo</Text>
   </TouchableOpacity>
 
+  <TouchableOpacity onPress={() => navigation.navigate('Color')}>
+  <Text>Add Color</Text>
+  </TouchableOpacity>
+
   </View>
 )};
 
