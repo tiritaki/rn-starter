@@ -1,11 +1,11 @@
-import {Text, View, StyleSheet} from 'react-native'
+import {Text, View, StyleSheet, ImageBackground} from 'react-native'
 
 const BoxScreen = () => {
     return (
         <View style = {styles.viewStyle}>
-            <Text style = {styles.textOneStyle}> Child 1</Text>
-            <Text style = {styles.textTwoStyle}> This is my BoxScreen</Text>
-            <Text style = {styles.textThreeStyle}> Child 3</Text>
+            <View style = {styles.viewOneStyle} />
+            <View style = {styles.viewTwoStyle} />
+            <View style = {styles.viewThreeStyle} />
         </View>
     )
 }
@@ -14,26 +14,41 @@ const styles = StyleSheet.create ({
     viewStyle : {
         borderWidth : 5,
         borderColor : 'black',
-        alignItems: 'flex-start', 
-        // flexDirection: 'row',
+        // alignItems: 'center', 
+        flexDirection: 'row',
         height : 200,
-        // justifyContent: 'space-around',
+        justifyContent: 'space-between',
 
     },
-    textOneStyle: {
-        borderWidth : 3,
-        borderColor : 'red',
+    viewOneStyle: {
+        // borderWidth : 3,
+        // borderColor : 'red',
         // flex: 1
+        height : 100,
+        width : 100,
+        backgroundColor: 'red'
     },
-    textTwoStyle: {
-        borderWidth : 3,
-        borderColor : 'red',
+    viewTwoStyle: {
+        // borderWidth : 3,
+        // borderColor : 'red',
+        height : 100,
+        width : 100,
+        backgroundColor: 'green',
         // flex: 1,
-        alignSelf: 'center'
+        alignSelf: 'flex-end'
+        // position: 'absolute',
+        // top: 0,
+        // right: 0,
+        // left: 0,
+        // bottom: 0
+        //...StyleSheet.absoluteFillObject
     },
-    textThreeStyle: {
-        borderWidth : 3,
-        borderColor : 'red',
+    viewThreeStyle: {
+        // borderWidth : 3,
+        // borderColor : 'red',
+        height : 100,
+        width : 100,
+        backgroundColor: 'violet'
         // flex: 1
     }
 })
